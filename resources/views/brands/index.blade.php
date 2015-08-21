@@ -28,7 +28,7 @@
 										<tr class="success">								
 											<td>{!! $brand->name !!}</td>
 											<td><img src="/uploads/{!! $brand->logo !!}" class="img-responsive" width="150" /></td>
-											<td><a href="{!! $brand->website !!}" target="_blank">C-View.com.au</a></td>
+											<td><a href="{!! $brand->website !!}" target="_blank">{!! $brand->website !!}</a></td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
 													<a href="{{ url('/home/brands/'.$brand->id) }}" class="btn btn-primary btn-sm">View</a>
