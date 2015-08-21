@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('meta')
-	<title>C-View Windows - Fastest Windows on the Coast</title>
+	<title>{!! $brand->name !!} - Fastest Windows on the Coast</title>
 	<meta name="description" content="Manufactured right here on Australia&#039;s Gold Coast, our windows and doors are as lovely to look at as they are to look through. You will find genuine quality in every inch of C-View windows and doors.">
 	<meta name="keywords" content="c-view, windows, doors, Gold Coast, Brisbane, Queensland, Australia, aluminium, sea view, residential, prestige, commercial, screens">
 @endsection
