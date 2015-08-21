@@ -235,7 +235,7 @@
 			<div class="row">
 				<div class="col-md-8">						
 		            <p class="copyright-space">
-	                    2012 - <?php echo date("Y") ?> &copy; C-View Windows. ALL Rights Reserved. 
+	                    2012 - <?php echo date("Y") ?> &copy; {!! $brand->name !!}. ALL Rights Reserved. 
 	                    <a href="/privacy">Privacy Policy</a><!-- | <a href="#">Terms of Service</a>-->
 	                </p>
 				</div>
