@@ -16,11 +16,16 @@ class Colour extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'hex', 'status'];
+	protected $fillable = ['name', 'hex', 'description', 'code', 'file', 'label_id', 'status'];
 
     public function products() 
 	{
 		return $this->belongsToMany('App\Product');
 	}
+
+	public function label()
+    {
+        return $this->belongsTo('App\Label');
+    }
 
 }

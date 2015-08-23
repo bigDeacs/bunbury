@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bradnams Bunbury | Admin</title>
+	<title>C-View Windows | Admin</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -14,6 +14,8 @@
 
 	<link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" media="all" type="text/css" href="/css/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.css">
+	<link rel="stylesheet" href="{{ asset('/plugins/font-awesome/css/font-awesome.min.css') }}">
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -49,7 +51,14 @@
 								<li class="divider"></li>
 								<li><a href="{{ url('/home/types') }}"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Product Types</a></li>
 								<li><a href="{{ url('/home/categories') }}"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Product Categories</a></li>
-								<li><a href="{{ url('/home/colours') }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Product Colours</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Colours <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/home/colours') }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Colour Options</a></li>
+								<li class="divider"></li>
+								<li><a href="{{ url('/home/colourlabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Colour Labels</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -89,7 +98,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<!--<li><a href="{{ url('/auth/register') }}">Register</a></li>-->
+						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ Auth::user()->name }} <span class="caret"></span></a>
@@ -112,6 +121,8 @@
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+	<script src="/js/bootstrap-select.js"></script>
+	@yield('scripts')
 	<script>
 		CKEDITOR.replace('description');
 		CKEDITOR.replace('features');
@@ -120,6 +131,7 @@
 	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <script type="text/javascript" charset="utf-8">
+        $('.selectpicker').selectpicker();
         $(document).ready(function() {
             $('#datatable').dataTable({
 		        stateSave: true
@@ -162,7 +174,6 @@
 		        });
 		});
 	</script>
-
 	<script type="text/javascript" src="/js/jquery-ui-timepicker-addon.js"></script>
 	<script type="text/javascript" src="/js/jquery-ui-sliderAccess.js"></script>
 	<script type="text/javascript">
@@ -178,6 +189,9 @@
 				numberOfMonths: 1
 			});
 		});
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
 	</script>
 
 </body>

@@ -2,6 +2,7 @@
 
 use App\Ranking;
 use App\Brochure;
+use App\Label;
 use App\Http\Requests\CreateRank;
 
 class BrochurerankingsController extends Controller {
@@ -25,7 +26,11 @@ class BrochurerankingsController extends Controller {
 	public function create()
 	{
 		$rankings = Ranking::where('rankable_type', '=', 'App\Brochure')->get();
-		$brochures = Brochure::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
+		$labels = Label::where('status', '=', '1')->where('type', '=', 'Brochure')->orderBy('name', 'ASC')->get();
+		foreach($labels as $label)
+		{
+			$brochures[$label['name']] = Brochure::where('status', '=', '1')->where('label_id', '=', $label['id'])->orderBy('name', 'ASC')->lists('name', 'id');
+		}
 		if(count($rankings))
 		{
 			return view('brochurerankings.create', compact('brochures', 'rankings'));

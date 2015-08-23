@@ -16,7 +16,7 @@ class Brochure extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'file', 'thumb', 'label_id', 'description', 'status'];
+	protected $fillable = ['name', 'file', 'thumb', 'icon','label_id', 'description', 'status'];
 
 	public function products()
     {

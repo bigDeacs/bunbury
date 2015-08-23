@@ -28,4 +28,9 @@ class Label extends Model {
         return $this->hasMany('App\Brochure');
     }
 
+    public function colours()
+    {
+        return $this->hasMany('App\Colour');
+    }
+
 }

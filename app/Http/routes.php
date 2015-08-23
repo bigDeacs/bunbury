@@ -74,15 +74,20 @@ Route::group(['before' => 'auth', 'prefix' => 'home'], function()
 	Route::get('galleries/{galleries}/deactivate', ['as' => 'galleries.deactivate', 'uses' => 'GalleriesController@deactivate']);
 	Route::resource('galleries', 'GalleriesController', ['except' => ['destroy']]);
 
-	# Types
+	# Image Labels
 	Route::get('imagelabels/{imagelabels}/activate', ['as' => 'imagelabels.activate', 'uses' => 'ImagelabelsController@activate']);
 	Route::get('imagelabels/{imagelabels}/deactivate', ['as' => 'imagelabels.deactivate', 'uses' => 'ImagelabelsController@deactivate']);
 	Route::resource('imagelabels', 'ImagelabelsController', ['except' => ['destroy']]);
 
-	# Types
+	# Brochure Labels
 	Route::get('brochurelabels/{brochurelabels}/activate', ['as' => 'brochurelabels.activate', 'uses' => 'BrochurelabelsController@activate']);
 	Route::get('brochurelabels/{brochurelabels}/deactivate', ['as' => 'brochurelabels.deactivate', 'uses' => 'BrochurelabelsController@deactivate']);
 	Route::resource('brochurelabels', 'BrochurelabelsController', ['except' => ['destroy']]);
+
+	# Colour Labels
+	Route::get('colourlabels/{colourlabels}/activate', ['as' => 'colourlabels.activate', 'uses' => 'ColourlabelsController@activate']);
+	Route::get('colourlabels/{colourlabels}/deactivate', ['as' => 'colourlabels.deactivate', 'uses' => 'ColourlabelsController@deactivate']);
+	Route::resource('colourlabels', 'ColourlabelsController', ['except' => ['destroy']]);
 
 	# Brand
 	Route::resource('brands', 'BrandsController', ['except' => ['destroy']]);
@@ -117,6 +122,7 @@ Route::get('commercials', 'PagesController@commercials');
 Route::get('commercial/{id}', 'PagesController@commercial');
 Route::get('screens', 'PagesController@screens');
 Route::get('screen/{id}', 'PagesController@screen');
+Route::get('colours', 'PagesController@colours');
 Route::get('brochures', 'PagesController@brochures');
 Route::get('faqs/{id}', 'PagesController@faqs');
 Route::get('about', 'PagesController@about');

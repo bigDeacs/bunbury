@@ -22,7 +22,9 @@ class UpdateProduct extends Request {
 	public function rules()
 	{
 		return [
-			'name' => 'required|unique:products,name,'.$this->get('id')
+			'name' 	=> 'required',
+			'url' 	=> 'required|unique:products,url,'.$this->get('id'),
+			'description' => 'required'
 		];
 	}
 

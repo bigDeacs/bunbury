@@ -33,7 +33,11 @@ class ProductsController extends Controller {
 	{
 		$types = Type::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$categories = Category::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
-		$brochures = Brochure::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
+		$brochures = Brochure::where('status', '=', '1')->whereHas('label', function($q)
+		{
+		    $q->where('name', '=', 'Size Charts');
+
+		})->orderBy('name', 'ASC')->lists('name', 'id');
 		$colours = Colour::where('status', '=', '1')->lists('name', 'id');
 		return view('products.create', compact('types', 'categories', 'brochures', 'colours'));
 	}
@@ -61,7 +65,7 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
+				$move = $image->move(public_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				if($move) {
 					$imageData = Image::create([
 						'name' => $product->name,
@@ -99,7 +103,11 @@ class ProductsController extends Controller {
 		$product = Product::find($id);
 		$types = Type::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$categories = Category::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
-		$brochures = Brochure::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
+		$brochures = Brochure::where('status', '=', '1')->whereHas('label', function($q)
+		{
+		    $q->where('name', '=', 'Size Charts');
+
+		})->orderBy('name', 'ASC')->lists('name', 'id');
 		$colours = Colour::where('status', '=', '1')->lists('name', 'id');
 		return view('products.edit', compact('product', 'types', 'categories', 'brochures', 'colours'));
 	}
@@ -122,18 +130,19 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
+				$move = $image->move(public_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				if($move) {
 					$imageData = Image::create([
 						'name' => $product->name,
-						'file' => $filename
+						'file' => $filename,
+						'product' => 1
 					]);
 					$sync[] = $imageData->id;
 				}
 			}
 			$oldImages = $product->images()->get();
 			foreach($oldImages as $oldImage) {
-				File::delete(storage_path() . '/uploads/' . $oldImage->file);
+				File::delete(public_path() . '/uploads/' . $oldImage->file);
 			}
 			$product->images()->sync($sync);
 		}

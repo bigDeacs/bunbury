@@ -15,6 +15,8 @@
 							        <tr>
 							            <th><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Rank</th>							            
 							            <th><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Product</th>
+							            <th><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Category</th>
+							            <th><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Type</th>
 							        </tr>
 							    </thead>
 							    <tbody>
@@ -22,6 +24,8 @@
 										<tr class="success">
 											<td>{!! $ranking->rank !!}</td>
 											<td>{!! $ranking->rankable->name !!}</td>
+											<td>{!! $ranking->rankable->category->name !!}</td>
+											<td>{!! $ranking->rankable->type->name !!}</td>
 										</tr>
 									@endforeach
 							    </tbody>

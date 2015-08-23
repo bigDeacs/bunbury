@@ -5,6 +5,7 @@ use App\Product;
 use App\Brochure;
 use App\Label;
 use App\Offer;
+use App\Colour;
 use Mail;
 use App\Http\Requests\ContactRequest;
 
@@ -74,6 +75,11 @@ class PagesController extends Controller {
 		    $q->where('name', '=', 'Windows');
 
 		})->get();
+		foreach($this->data['products'] as $product)
+		{
+			$image = $product->images()->first();
+			array_set($product, 'image', $image['file']);
+		}
 		$data = $this->data;
 		return view('windows', $data);
 	}
@@ -109,6 +115,11 @@ class PagesController extends Controller {
 		    $q->where('name', '=', 'Doors');
 
 		})->take(4)->get();
+		foreach($this->data['products'] as $product)
+		{
+			$image = $product->images()->first();
+			array_set($product, 'image', $image['file']);
+		}
 		$data = $this->data;
 		return view('door', $data);
 	}
@@ -132,6 +143,11 @@ class PagesController extends Controller {
 		    $q->where('name', '=', 'Commercial');
 
 		})->take(4)->get();
+		foreach($this->data['products'] as $product)
+		{
+			$image = $product->images()->first();
+			array_set($product, 'image', $image['file']);
+		}
 		$data = $this->data;
 		return view('commercial', $data);
 	}
@@ -155,8 +171,20 @@ class PagesController extends Controller {
 		    $q->where('name', '=', 'Screens');
 
 		})->take(4)->get();
+		foreach($this->data['products'] as $product)
+		{
+			$image = $product->images()->first();
+			array_set($product, 'image', $image['file']);
+		}
 		$data = $this->data;
 		return view('screen', $data);
+	}
+
+	public function colours()
+	{
+		$this->data['colours'] = Colour::where('status', '=', 1)->get();
+		$data = $this->data;
+		return view('colours', $data);
 	}
 
 	public function brochures()
@@ -190,8 +218,8 @@ class PagesController extends Controller {
 		Mail::send('emails.contact',
 	        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 	   	 	{
-	        	$message->from('sales@c-view.com.au');
-	        	$message->to('brentdeacon23@gmail.com', 'Admin')->subject('C-View Windows Contact Request');
+	        	$message->from('c-view@c-view.com.au');
+	        	$message->to('sales@c-view.com.au', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('C-View Windows Contact Request');
 	    	}
 	    );
 	    return redirect('thankyou');

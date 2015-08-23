@@ -2,6 +2,7 @@
 
 use App\Ranking;
 use App\Product;
+use App\Category;
 use App\Http\Requests\CreateRank;
 
 class ProductrankingsController extends Controller {
@@ -25,7 +26,11 @@ class ProductrankingsController extends Controller {
 	public function create()
 	{
 		$rankings = Ranking::where('rankable_type', '=', 'App\Product')->get();
-		$products = Product::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
+		$categories = Category::where('status', '=', '1')->orderBy('name', 'ASC')->get();
+		foreach($categories as $category)
+		{
+			$products[$category['name']] = Product::where('status', '=', '1')->where('category_id', '=', $category['id'])->orderBy('name', 'ASC')->lists('name', 'id');
+		}
 		if(count($rankings))
 		{
 			return view('productrankings.create', compact('products', 'rankings'));

@@ -22,7 +22,8 @@ class CreateProduct extends Request {
 	public function rules()
 	{
 		return [
-			'name' 	=> 'required|unique:products',
+			'name' 	=> 'required',
+			'url' 	=> 'required|unique:products',
 			'description' => 'required'
 		];
 	}

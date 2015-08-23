@@ -2,6 +2,7 @@
 
 use App\Ranking;
 use App\Image;
+use App\Label;
 use App\Http\Requests\CreateRank;
 
 class GalleryrankingsController extends Controller {
@@ -25,7 +26,11 @@ class GalleryrankingsController extends Controller {
 	public function create()
 	{
 		$rankings = Ranking::where('rankable_type', '=', 'App\Image')->get();
-		$images = Image::where('status', '=', '1')->where('product', '=', 0)->orderBy('name', 'ASC')->lists('name', 'id');
+		$labels = Label::where('status', '=', '1')->where('type', '=', 'Image')->orderBy('name', 'ASC')->get();
+		foreach($labels as $label)
+		{
+			$images[$label['name']] = Image::where('status', '=', '1')->where('product', '=', 0)->where('label_id', '=', $label['id'])->orderBy('name', 'ASC')->lists('name', 'id');
+		}
 		if(count($rankings))
 		{
 			return view('galleryrankings.create', compact('images', 'rankings'));

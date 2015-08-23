@@ -46,7 +46,7 @@ class BrochuresController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(public_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$brochure->thumb = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -57,7 +57,7 @@ class BrochuresController extends Controller {
 			if($request->file('file')->isValid()) 
 			{
 				$upload = $request->file('file');
-				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
+				$moveUpload = $upload->move(public_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
 				$brochure->file = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -101,9 +101,9 @@ class BrochuresController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(public_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$brochure->update(['thumb' => $filename]);
-				File::delete(storage_path() . '/uploads/' . $oldImage);
+				File::delete(public_path() . '/uploads/' . $oldImage);
 			} else {
 				return redirect()->back()->withInput();
 			}
@@ -113,9 +113,9 @@ class BrochuresController extends Controller {
 			if($request->file('file')->isValid()) 
 			{
 				$upload = $request->file('file');
-				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
+				$moveUpload = $upload->move(public_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
 				$brochure->update(['file' => $filename]);
-				File::delete(storage_path() . '/uploads/' . $oldUpload);
+				File::delete(public_path() . '/uploads/' . $oldUpload);
 			} else {
 				return redirect()->back()->withInput();
 			}

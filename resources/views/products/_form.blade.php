@@ -11,7 +11,7 @@
 		{!! errors_for('name', $errors) !!}
 	</div>
 	<div class="col-md-6 {!! $errors->has('url') ? 'has-error' : '' !!}">
-		<label for="url">Url</label>
+		<label for="url"><a href="#" data-toggle="tooltip" title="Must be unique">Url</a></label>
 		{!! Form::text('url', null, ['class' => 'form-control input-sm', 'id' => 'url']) !!}
 		{!! errors_for('url', $errors) !!}
 	</div>
@@ -43,11 +43,11 @@
 
 <div class="form-group row">
 	<div class="col-md-4 {!! $errors->has('file') ? 'has-error' : '' !!}">
-		<label for="images">Images<small> - multiple can be uploaded at once</small></label>
+		<label for="images"><a href="#" data-toggle="tooltip" title="Multiple uploads at once available">Images</a><small> - 890px X 500px only</small></label>
 		<input type="file" class="form-control input-sm" name="images[]" id="images" multiple>
 	</div>
 	<div class="col-md-4 {!! $errors->has('meta') ? 'has-error' : '' !!}">
-		<label for="video">Video Link</label>
+		<label for="video">Video Link</label><br />
 		{!! Form::text('video', null, ['class' => 'form-control input-sm', 'id' => 'video']) !!}
 		{!! errors_for('video', $errors) !!}
 	</div>

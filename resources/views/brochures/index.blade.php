@@ -32,7 +32,7 @@
 											<td>{!! $brochure->name !!}</td>
 											<td><img src="/uploads/{!! $brochure->thumb !!}" class="img-responsive" width="150" /></td>
 											<td><a href="/uploads/{!! $brochure->file !!}" target="_blank" />Open PDF</a></td>
-											<td>{!! $brochure->type !!}</td>
+											<td>{!! $brochure->label->name !!}</td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
 													<a href="{{ url('/home/brochures/'.$brochure->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
