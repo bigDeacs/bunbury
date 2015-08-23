@@ -1674,6 +1674,7 @@ ul.blog-tags a:hover i {
 
 .top {
 	/*padding-top: 8px;*/
+	background-color: #808080!important;
 }
 
 .top ul.loginbar {
