@@ -2794,6 +2794,7 @@ ul.blog-tags a:hover {
 	z-index:999;
 	position:relative;
 	border-bottom:solid 2px #5C6265;
+	background-color: #687074!important;
 }
 
 .header .navbar {
@@ -2820,9 +2821,9 @@ ul.blog-tags a:hover {
 
 /*Navbar*/
 .header .navbar-default .navbar-nav > li > a {
-	color: #3E4244;
+	color: #fff;
 	font-size: 13px;
-	font-weight:600;
+	font-weight:400;
 	padding: 9px 20px;
 	text-transform: uppercase;
 }
