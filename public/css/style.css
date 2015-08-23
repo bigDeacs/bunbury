@@ -3022,15 +3022,15 @@ ul.blog-tags a:hover {
 .navbar-toggle,
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
-	background: #3498db;
+	background: #f0ad4e;
 }
 
 .navbar-toggle:hover {
-	background: #2980b9 !important;
+	background: #ec971f !important;
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #2980b9;
+	border-color: #eea236;
 }
 
 /*Serach Box*/
