@@ -160,70 +160,19 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 md-margin-bottom-40">
+				<div class="col-md-6 md-margin-bottom-40">
 	                <!-- About -->
 			        <div class="headline"><h2>About</h2></div>	
 					<p class="margin-bottom-25 md-margin-bottom-40">@if($brand->about){!! $brand->about !!}@endif</p>	
-	                <!-- Contact Us -->
-			        <div class="headline"><h2>Contact Us</h2></div>	
+				</div><!--/col-md-4-->	
+				<div class="col-md-6 md-margin-bottom-40">
+	                <div class="headline"><h2>Contact Us</h2></div>	
 	                <address class="md-margin-bottom-40">
 						@if($brand->address)<i class="icon-home"></i> {!! $brand->address !!}<br />@endif
 						@if($brand->phone)<i class="icon-phone-sign"></i> {!! $brand->phone !!}<br />@endif
 						@if($brand->fax)<i class="icon-print"></i> {!! $brand->fax !!}<br />@endif
 						@if($brand->email)<i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a>@endif
 	                </address>
-				</div><!--/col-md-4-->	
-				
-				<style>#facebook_posts > *, .fb_iframe_widget span, .fb_iframe_widget iframe { width:100%!important; }</style>
-				<div class="col-md-4 md-margin-bottom-40">
-	                <div class="posts">
-	                    <div class="headline"><h2>Recent Activity</h2></div>
-						<div id="facebook_posts"style="position:relative; overflow:hidden; height:300px; background: #ffffff;">
-							<div class="fb-like-box" data-href="https://www.facebook.com/cviewwindows" data-width="100%" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false" style="top: -70px;"></div>
-	                    </div>
-	                </div>
-				</div><!--/col-md-4-->
-
-				<div class="col-md-4">
-				<!-- Monthly Newsletter -->
-			        <div class="headline"><h2>Monthly Newsletter</h2></div>	
-					<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-					<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup">
-						<form action="http://brentdeacon.us3.list-manage.com/subscribe/post?u=a926b06132c6a909085105fdf&amp;id=5b79bdef17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div class="input-group" style="width: 100%;">
-								<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email Address" required> 
-								<div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_a926b06132c6a909085105fdf_5b79bdef17" tabindex="-1" value="" required>
-								</div>						
-							</div>
-							<div class="input-group" style="width: 100%;">
-								<input type="email" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Eg. John" required> 
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								<div style="position: absolute; left: -5000px;"><input type="text" name="b_a926b06132c6a909085105fdf_5b79bdef17" tabindex="-1" value=""></div>		
-							</div>
-							<div class="input-group" style="width: 100%;">	
-								<span class="input-group-btn">
-									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-u btn-block">
-								</span>
-							 </div>
-	                    </form><!--End mc_embed_signup-->
-	                </div>
-	                <!-- Stay Connected -->
-			        <div class="headline"><h2>Stay Connected</h2></div>	
-	                <ul class="social-icons">
-	                    <!--<li><a href="#" data-original-title="Feed" class="social_rss"></a></li>-->
-	                    @if($brand->facebook)<li><a href="https://www.facebook.com/{!! $brand->facebook !!}" data-original-title="Facebook" class="social_facebook" target="_blank"></a></li>@endif
-	                    @if($brand->twitter)<li><a href="https://twitter.com/{!! $brand->twitter !!}" data-original-title="Twitter" class="social_twitter" target="_blank"></a></li>@endif
-	                    @if($brand->google)<li><a href="https://www.google.com/+{!! $brand->google !!}" data-original-title="Goole Plus" class="social_googleplus" target="_blank"></a></li>@endif
-						@if($brand->yellow)<li><a href="http://www.yellowpages.com.au/{!! $brand->yellow !!}" data-original-title="Yellow Pages" class="social_yellowpages" target="_blank"></a></li>@endif
-	                    @if($brand->pinterest)<li><a href="http://www.pinterest.com/{!! $brand->pinterest !!}" data-original-title="Pinterest" class="social_pintrest" target="_blank"></a></li>@endif
-	                    @if($brand->vimeo)<li><a href="http://vimeo.com/{!! $brand->vimeo !!}" data-original-title="Vimeo" class="social_vimeo" target="_blank"></a></li>@endif
-						@if($brand->houzz)<li><a href="http://www.houzz.com.au/pro/{!! $brand->houzz !!}" data-original-title="Houzz" class="social_houzz" target="_blank"></a></li>@endif
-	                </ul>
 				</div><!--/col-md-4-->
 			</div><!--/row-->	
 		</div><!--/container-->	

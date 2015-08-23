@@ -1674,7 +1674,7 @@ ul.blog-tags a:hover i {
 
 .top {
 	/*padding-top: 8px;*/
-	background-color: #808080!important;
+	background-color: #687074!important;
 }
 
 .top ul.loginbar {
@@ -2793,7 +2793,7 @@ ul.blog-tags a:hover {
 .header {
 	z-index:999;
 	position:relative;
-	border-bottom:solid 2px #eee;
+	border-bottom:solid 2px #5C6265;
 }
 
 .header .navbar {
@@ -2820,9 +2820,9 @@ ul.blog-tags a:hover {
 
 /*Navbar*/
 .header .navbar-default .navbar-nav > li > a {
-	color: #687074;
+	color: #3E4244;
 	font-size: 13px;
-	font-weight:400;
+	font-weight:600;
 	padding: 9px 20px;
 	text-transform: uppercase;
 }
