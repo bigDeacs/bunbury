@@ -83,7 +83,7 @@
 	        <ul class="loginbar pull-right">
 	            <li>
 	                <p class="phone"><i class="icon-phone"></i> {!! $brand->phone !!}</p>
-	                <p class="phone_btn"><a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-primary"><i class="icon-phone"></i> Click to Call</a></p>
+	                <p class="phone_btn"><a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-warning"><i class="icon-phone"></i> Click to Call</a></p>
 	            </li>
 	        </ul>
 	        @if($brand->facebook)
