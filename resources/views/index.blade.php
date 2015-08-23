@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-	<title>{!! $brand->name !!} - Fastest Windows on the Coast</title>
-	<meta name="description" content="Manufactured right here on Australia&#039;s Gold Coast, our windows and doors are as lovely to look at as they are to look through. You will find genuine quality in every inch of C-View windows and doors.">
-	<meta name="keywords" content="c-view, windows, doors, Gold Coast, Brisbane, Queensland, Australia, aluminium, sea view, residential, prestige, commercial, screens">
+	<title>{!! $brand->name !!} - Dedicated to service of the highest quality.</title>
+	<meta name="description" content="Dedicated to service of the highest quality.  Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products.">
+	<meta name="keywords" content="bradnams, bunbury, windows, doors, Western Australia, Australia, aluminium, sea view, residential, prestige, commercial, screens">
 @endsection
 
 @section('head')
@@ -48,8 +48,8 @@
 	    <div class="container">
 	        <div class="row">
 	            <div class="col-md-9 col-xs-12">
-	                <h1><span>Manufactured right here on Australia's Gold Coast.</span></h1>
-	                <p class="hidden-xs">At C-View, you will see the dedication to service of a highly-skilled team of local, Gold Coast professionals. Though we specialise in window and door renovation projects, we handle each project with the same kid-glove care, whether from renovator, builder, owner, or handyman.</p>
+	                <h1><span>Dedicated to service of the highest quality.</span></h1>
+	                <p class="hidden-xs"> Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products.</p>
 	            </div>            
 	            <div class="col-md-3 hidden-xs">
 	                <a href="/about" class="btn-more hover-effect">Find Out More</a>            
@@ -109,7 +109,7 @@
 			<div class="row">
 		    	<!-- Welcome Block -->
 				<div class="col-md-8 hidden-xs">
-					<div class="headline"><h4>Welcome To C-View Windows</h4></div>
+					<div class="headline"><h4>Welcome To Bradnams Bunbury</h4></div>
 		            <div class="row">
 		                <div class="col-sm-4">
 		                    <img class="img-responsive margin-bottom-20" src="{{ asset('/img/about/extra.jpg') }}" alt="" />
@@ -126,8 +126,8 @@
 		            </div>
 
 		            <blockquote class="hero-unify">
-		                <p>We have a reputation for providing the 'Fastest Windows on the Coast', as we are an efficient, competitive manufacturer of windows and doors that delivers quality products finessed with excellent customer service.</p>
-		                <small>Managing Director, Darrell Deacon</small>
+		                <p>-Small Blurb-</p>
+		                <small>Managing Director</small>
 		            </blockquote>
 		        </div><!--/col-md-8-->        
 
