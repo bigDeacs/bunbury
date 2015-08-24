@@ -262,6 +262,7 @@
 @section('scripts')
 	<script src="{{ asset('/js/jquery.event.move.js') }}"></script>
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/plugins/flexslider/jquery.flexslider-min.js') }}"></script>
 	<script>	
 		$(document).ready(function(){	  
 			$('.responsive-slider').responsiveSlider({		
