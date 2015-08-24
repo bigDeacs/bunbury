@@ -147,38 +147,115 @@
 			</div><!--/row-->	
 			<!-- End Info Blokcs -->
 
-			<!-- Owl Clients v1 -->
-	        <div class="headline"><h2>Our Clients</h2></div>        
-	        <div class="owl-clients-v1">
-	            <div class="item">
-	                <img src="assets/img/clients4/1.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/2.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/3.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/4.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/5.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/6.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/7.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/8.png" alt="">
-	            </div>
-	            <div class="item">
-	                <img src="assets/img/clients4/9.png" alt="">
-	            </div>
-	        </div>
-	        <!-- End Owl Clients v1 -->
+			<!-- Our Clients -->
+			<div id="clients-flexslider" class="flexslider home clients">
+		        <div class="headline"><h2>Our Clients</h2></div>	
+				<ul class="slides">
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/hp_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/hp.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/igneus_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/igneus.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/vadafone_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/vadafone.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/walmart_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/walmart.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/shell_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/shell.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/natural_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/natural.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="assets/img/clients/aztec_grey.png') }}" alt="" /> 
+		                    <img src="assets/img/clients/aztec.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/gamescast_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/gamescast.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/cisco_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/cisco.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/everyday_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/everyday.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/cocacola_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/cocacola.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/spinworkx_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/spinworkx.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/shell_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/shell.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/natural_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/natural.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/gamescast_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/gamescast.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/everyday_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/everyday.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+					<li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/spinworkx_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/spinworkx.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+				</ul>
+			</div><!--/flexslider-->
+			<!-- End Our Clients -->
 		</div><!--/container-->	
 @endsection
 
