@@ -189,8 +189,8 @@
 		            </li>
 					<li>
 		                <a href="#">
-		                    <img src="assets/img/clients/aztec_grey.png') }}" alt="" /> 
-		                    <img src="assets/img/clients/aztec.png') }}" class="color-img" alt="" />
+		                    <img src="{{ asset('/img/clients/aztec_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/aztec.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 					<li>
@@ -263,6 +263,11 @@
 	<script src="{{ asset('/js/jquery.event.move.js') }}"></script>
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/plugins/flexslider/jquery.flexslider-min.js') }}"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function() {
+	        Index.initParallaxSlider();
+	    });
+	</script>
 	<script>	
 		$(document).ready(function(){	  
 			$('.responsive-slider').responsiveSlider({		
