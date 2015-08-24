@@ -264,9 +264,14 @@
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/plugins/flexslider/jquery.flexslider-min.js') }}"></script>
 	<script type="text/javascript">
-	    jQuery(document).ready(function() {
-	        Index.initParallaxSlider();
-	    });
+	    $(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		    animationLoop: false,
+		    itemWidth: 210,
+		    itemMargin: 5
+		  });
+		});
 	</script>
 	<script>	
 		$(document).ready(function(){	  
