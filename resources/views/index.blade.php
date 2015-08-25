@@ -153,27 +153,81 @@
 		        <div class="headline"><h2>Our Clients</h2></div>	
 				<ul class="slides">
 					<li>
-		                <a href="#">
+		                <a href="http://www.bradnams.com.au/" target="_blank">
 		                    <img src="{{ asset('/img/clients/alspec_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/alspec.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
-		                <a href="#">
+		                <a href="http://www.alspec.com.au/" target="_blank">
 		                    <img src="{{ asset('/img/clients/bradnams_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/bradnams.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
-		                <a href="#">
+		                <a href="http://www.capral.com.au/" target="_blank">
 		                    <img src="{{ asset('/img/clients/capral_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/capral.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
-		                <a href="#">
+		                <a href="http://www.aneetawindows.com.au/home.asp" target="_blank">
 		                    <img src="{{ asset('/img/clients/aneeta_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/aneeta.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.breezway.com.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/breezway_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/breezway.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.centor.com.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/centor_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/centor.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.austyle.com.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/austyle_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/austyle.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.lockweb.com.au/en/site/lockweb/" target="_blank">
+		                    <img src="{{ asset('/img/clients/lockwood_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/lockwood.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://coolingbros.com.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/coolingbrothers_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/coolingbrothers.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.viridianglass.com/default.aspx" target="_blank">
+		                    <img src="{{ asset('/img/clients/viridian_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/viridian.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.walshsglass.com.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/walshglass_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/walshglass.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.awa.org.au/" target="_blank">
+		                    <img src="{{ asset('/img/clients/awa_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/awa.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="http://www.wers.net/wers-home" target="_blank">
+		                    <img src="{{ asset('/img/clients/wer_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/wer.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 				</ul>
@@ -187,41 +241,14 @@
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/plugins/flexslider/jquery.flexslider-min.js') }}"></script>
 	<script type="text/javascript">
-	    (function() {
- 
-		  // store the slider in a local variable
-		  var $window = $(window),
-		      flexslider;
-		 
-		  // tiny helper function to add breakpoints
-		  function getGridSize() {
-		    return (window.innerWidth < 600) ? 2 :
-		           (window.innerWidth < 900) ? 3 : 4;
-		  }
-		 
-		  $(function() {
-		    SyntaxHighlighter.all();
+	    $(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		    animationLoop: true,
+		    itemWidth: 210,
+		    itemMargin: 5
 		  });
-		 
-		  $window.load(function() {
-		    $('.flexslider').flexslider({
-		      animation: "slide",
-		      animationLoop: false,
-		      itemWidth: 210,
-		      itemMargin: 5,
-		      minItems: getGridSize(), // use function to pull in initial value
-		      maxItems: getGridSize() // use function to pull in initial value
-		    });
-		  });
-		 
-		  // check grid size on resize event
-		  $window.resize(function() {
-		    var gridSize = getGridSize();
-		 
-		    flexslider.vars.minItems = gridSize;
-		    flexslider.vars.maxItems = gridSize;
-		  });
-		}());
+		});
 	</script>
 	<script>	
 		$(document).ready(function(){	  
