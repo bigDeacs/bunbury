@@ -153,104 +153,14 @@
 				<ul class="slides">
 					<li>
 		                <a href="#">
-		                    <img src="{{ asset('/img/clients/hp_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/hp.png') }}" class="color-img" alt="" />
+		                    <img src="{{ asset('/img/clients/alspec_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/alspec.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
-					<li>
+		            <li>
 		                <a href="#">
-		                    <img src="{{ asset('/img/clients/igneus_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/igneus.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/vadafone_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/vadafone.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/walmart_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/walmart.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/shell_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/shell.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/natural_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/natural.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/aztec_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/aztec.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/gamescast_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/gamescast.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/cisco_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/cisco.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/everyday_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/everyday.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/cocacola_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/cocacola.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/spinworkx_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/spinworkx.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/shell_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/shell.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/natural_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/natural.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/gamescast_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/gamescast.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/everyday_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/everyday.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
-					<li>
-		                <a href="#">
-		                    <img src="{{ asset('/img/clients/spinworkx_grey.png') }}" alt="" /> 
-		                    <img src="{{ asset('/img/clients/spinworkx.png') }}" class="color-img" alt="" />
+		                    <img src="{{ asset('/img/clients/bradnams_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/bradnams.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 				</ul>
@@ -264,37 +174,14 @@
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/plugins/flexslider/jquery.flexslider-min.js') }}"></script>
 	<script type="text/javascript">
-	    (function() {
-			  // store the slider in a local variable
-			  var $window = $(window),
-			      flexslider;
-			  // tiny helper function to add breakpoints
-			  function getGridSize() {
-			    return (window.innerWidth < 600) ? 2 :
-			           (window.innerWidth < 900) ? 3 : 4;
-			  }
-			  $(function() {
-			    SyntaxHighlighter.all();
-			  });
-			  $window.load(function() {
-			    $('.flexslider').flexslider({
-			      animation: "slide",
-			      animationLoop: true,
-			      itemWidth: 210,
-			      itemMargin: 5,
-			      minItems: getGridSize(), // use function to pull in initial value
-			      maxItems: getGridSize() // use function to pull in initial value
-			    });
-			  });
-			 
-			  // check grid size on resize event
-			  $window.resize(function() {
-			    var gridSize = getGridSize();
-			 
-			    flexslider.vars.minItems = gridSize;
-			    flexslider.vars.maxItems = gridSize;
-			  });
-			}());
+	    $(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		    animationLoop: true,
+		    itemWidth: 210,
+		    itemMargin: 5
+		  });
+		});
 	</script>
 	<script>	
 		$(document).ready(function(){	  
