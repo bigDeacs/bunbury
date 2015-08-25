@@ -8,7 +8,7 @@
 
 @section('head')
 	<link href="{{ asset('/css/responsive-slider.min.css') }}" rel="stylesheet" media="screen">
-	<link rel="stylesheet" href="{{ asset('/plugins/flexslider.css') }}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ asset('/plugins/flexslider/flexslider.css') }}" type="text/css" media="screen" />
 @endsection
 
 @section('content')
