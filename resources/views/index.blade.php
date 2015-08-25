@@ -163,6 +163,18 @@
 		                    <img src="{{ asset('/img/clients/bradnams.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
+		            <li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/capral_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/capral.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
+		            <li>
+		                <a href="#">
+		                    <img src="{{ asset('/img/clients/aneeta_grey.png') }}" alt="" /> 
+		                    <img src="{{ asset('/img/clients/aneeta.png') }}" class="color-img" alt="" />
+		                </a>
+		            </li>
 				</ul>
 			</div><!--/flexslider-->
 			<!-- End Our Clients -->
