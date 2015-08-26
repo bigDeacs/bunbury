@@ -158,12 +158,14 @@
 				<div class="col-md-4 md-margin-bottom-40">
 	                <!-- About -->
 			        <div class="headline"><h2>Helpful Links</h2></div>	
-					<p class="margin-bottom-25 md-margin-bottom-40">
-						<ul>
+					<p class="margin-bottom-25 md-margin-bottom-40 row">
+						<ul class="col-md-6">
 							<li><a href="/windows">Windows</a></li>
 		                    <li><a href="/doors">Doors</a></li>
 							<li><a href="/commercials">Commercial</a></li>
 							<li><a href="/screens">Screens</a></li>
+		                </ul>
+		                <ul class="col-md-6">
 							<li><a href="/brochures">Brochures</a></li>
 							<li><a href="/faqs/glassrules">FAQ's</a></li>
 		                    <li><a href="/about">About</a></li>
