@@ -150,12 +150,28 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 md-margin-bottom-40">
+				<div class="col-md-4 md-margin-bottom-40">
 	                <!-- About -->
 			        <div class="headline"><h2>About</h2></div>	
 					<p class="margin-bottom-25 md-margin-bottom-40">@if($brand->about){!! $brand->about !!}@endif</p>	
 				</div><!--/col-md-4-->	
-				<div class="col-md-6 md-margin-bottom-40">
+				<div class="col-md-4 md-margin-bottom-40">
+	                <!-- About -->
+			        <div class="headline"><h2>Helpful Links</h2></div>	
+					<p class="margin-bottom-25 md-margin-bottom-40">
+						<ul>
+							<li><a href="/windows">Windows</a></li>
+		                    <li><a href="/doors">Doors</a></li>
+							<li><a href="/commercials">Commercial</a></li>
+							<li><a href="/screens">Screens</a></li>
+							<li><a href="/brochures">Brochures</a></li>
+							<li><a href="/faqs/glassrules">FAQ's</a></li>
+		                    <li><a href="/about">About</a></li>
+		                    <li><a href="/contact">Contact</a></li> 
+		                </ul>
+					</p>	
+				</div><!--/col-md-4-->		             
+				<div class="col-md-4 md-margin-bottom-40">
 	                <div class="headline"><h2>Contact Us</h2></div>	
 	                <address class="md-margin-bottom-40">
 						@if($brand->address)<i class="icon-home"></i> {!! $brand->address !!}<br />@endif
