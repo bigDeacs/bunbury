@@ -92,6 +92,9 @@
 					@if(isset($brochure->rank))
 						@if($brochure['rank'] == 1 || $brochure['rank'] == 2 || $brochure['rank'] == 3)
 					        <div class="col-md-4">
+					        	@if($brochure->icon)
+					        		<i class="{!! $brochure->icon !!} icon-3x home-icon"></i>
+					        	@endif
 					        	<div class="headline"><h3>{!! $brochure->name !!}</h3></div>
 					    		<div class="service service-blue">
 					    			<div class="desc">
@@ -109,7 +112,7 @@
 			<!-- Info Blokcs -->
 			<div class="row">
 		    	<!-- Welcome Block -->
-				<div class="col-md-8 hidden-xs">
+				<div class="col-md-9 hidden-xs">
 					<div class="headline"><h4>Welcome To Bradnams Bunbury</h4></div>
 		            <div class="row">
 		                <div class="col-sm-4">
@@ -133,7 +136,7 @@
 		        </div><!--/col-md-8-->        
 
 		        <!-- Latest Shots -->
-		        <div class="col-md-4 hidden-xs">
+		        <div class="col-md-3 hidden-xs">
 					@foreach($brochures as $brochure)
 						@if(isset($brochure->rank))
 							@if($brochure['rank'] == 4)
