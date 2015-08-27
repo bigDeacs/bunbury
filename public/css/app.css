@@ -7126,3 +7126,9 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+.home-icon {
+    float: right;
+    padding-right: 15px;
+    padding-top: 1px;
+    color: #3498db;
+}
