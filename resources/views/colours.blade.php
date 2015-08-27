@@ -59,7 +59,7 @@
 				@endforeach
 			</div>
 			<hr />
-			<div class="row">
+			<!--<div class="row">
 				<div class="headline col-md-12"><h3>Decorator</h3></div>
 				@foreach($colours as $colour)
 					@if($colour->label->name == 'Decorator')
@@ -71,7 +71,7 @@
 					@endif
 				@endforeach
 			</div>
-			<hr />
+			<hr />-->
 			<a href="#" data-toggle="modal" data-target=".bs-pdf-modal-lg" class="btn btn-success btn-block hidden-xs" title="See Full Size Image">
 				<i class="icon-book"></i> View Our Printable Colour Chart
 			</a>
