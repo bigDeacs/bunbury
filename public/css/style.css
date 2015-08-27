@@ -256,6 +256,9 @@
 .service a.btn-more-blue {
 	background: #3498db!important;
 }
+.service a.btn-more-orange {
+	background: #ee7a1f!important;
+}
 .service a.btn-more-red {
 	background: #db5734!important;
 }
@@ -264,6 +267,9 @@
 }
 .service a.btn-more-blue:hover {
 	background: #2d80b8!important;
+} 
+.service a.btn-more-orange:hover {
+	background: #C76920!important;
 } 
 .service a.btn-more-red:hover {
 	background: #ba4b2d!important;
@@ -2291,7 +2297,7 @@ a.read-more:hover {
 	background:#3498db;
 }
 .thumbnail-style a.btn-more:hover {
-	box-shadow:0 0 0 2px #2980b9;
+	box-shadow:0 0 0 2px #C76920;
 }
 
 /*Shots (Recent Shots)

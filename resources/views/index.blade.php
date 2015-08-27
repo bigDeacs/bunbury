@@ -53,7 +53,7 @@
 	                <p class="hidden-xs"> Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products.</p>
 	            </div>            
 	            <div class="col-md-3 hidden-xs">
-	                <a href="/about" class="btn-more hover-effect">Find Out More</a>            
+	                <a href="/about" class="btn-more btn-more-orange hover-effect">Find Out More</a>            
 	            </div>
 	        </div>
 	    </div>
@@ -99,7 +99,7 @@
 					    		<div class="service service-blue">
 					    			<div class="desc">
 					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
-						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-blue btn-block hover-effect">Find Out More</a>            
+						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-orange btn-block hover-effect">Find Out More</a>            
 					    			</div>
 					    		</div>	
 					    	</div>
@@ -140,7 +140,7 @@
 					@foreach($brochures as $brochure)
 						@if(isset($brochure->rank))
 							@if($brochure['rank'] == 4)
-								<div class="headline"><h2>Featured Brochure</h2></div>
+								<div class="headline"><h4>Featured Brochure</h4></div>
 						        <a href="/uploads/{!! $brochure->file !!}" target="_blank">
 			                    	<img class="img-responsive margin-bottom-20" src="/uploads/{!! $brochure->thumb !!}" alt="Featured Brochure" />
 								</a>
