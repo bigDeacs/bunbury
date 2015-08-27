@@ -1,48 +1,31 @@
 @extends('app')
 
 @section('meta')
-	<title>Contact Us</title>
-	<meta name="description" content="Manufactured right here on Australia&#039;s Gold Coast, our windows and doors are as lovely to look at as they are to look through. You will find genuine quality in every inch of C-View windows and doors.">
-	<meta name="keywords" content="c-view, windows, doors, Gold Coast, Brisbane, Queensland, Australia, aluminium, sea view, residential, prestige, commercial, screens">
+    <title>Contact Us</title>
+    <meta name="description" content="Manufactured right here on Australia&#039;s Gold Coast, our windows and doors are as lovely to look at as they are to look through. You will find genuine quality in every inch of C-View windows and doors.">
+    <meta name="keywords" content="c-view, windows, doors, Gold Coast, Brisbane, Queensland, Australia, aluminium, sea view, residential, prestige, commercial, screens">
 @endsection
 
 @section('head')
-	<link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
 @endsection
 
 @section('content')
-	<!--=== Breadcrumbs ===-->
-	<div class="breadcrumbs margin-bottom-20">
-	    <div class="container">
-	        <h1 class="pull-left">Contact Us</h1>
-	        <ul class="pull-right breadcrumb hidden-xs">
-	            <li><a href="/">Home</a></li>
-	            <li class="active">Contact</li>
-	        </ul>
-	    </div><!--/container-->
-	</div><!--/breadcrumbs-->
-	<!--=== End Breadcrumbs ===-->
-	<!--=== Content Part ===-->
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs margin-bottom-20">
+        <div class="container">
+            <h1 class="pull-left">Contact Us</h1>
+            <ul class="pull-right breadcrumb hidden-xs">
+                <li><a href="/">Home</a></li>
+                <li class="active">Contact</li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+    <!--=== Content Part ===-->
     <div class="container">     
     <div class="row margin-bottom-30">
         <div class="col-md-8 mb-margin-bottom-30">
-            <div class="headline"><h2>Our Office Location</h2></div>
-            <!-- Google Map -->
-            <div class="hidden-xs">
-                <iframe src="https://mapsengine.google.com/maps/d/embed?mid=z_yXRxSDstEA.kABQ9eKYROZY" width="100%" style="min-height:350px;"></iframe>
-            </div>
-            <div class="visible-xs">
-                <div class="headline"><h2>Our office location</h2></div>
-                <div class="phone_btn">
-                    <a href="http://maps.apple.com/maps?q=25 Dover Dr, Burleigh Heads QLD, Australia" class="btn btn-block btn-lg btn-success">
-                        <i class="icon-map-marker"></i> Open in Maps
-                    </a>
-                </div>
-            <br /></div>
-            <!---/map-->
-            <!-- End Google Map -->
-            <br />
-
             @if(isset($sent))
                 <div class="alert alert-success" role="alert">
                   <span>
@@ -85,6 +68,7 @@
                     </div>
                 {!! Form::close() !!}
             @endif
+            <br />
             
         </div><!--/col-md-9-->
 
@@ -115,15 +99,18 @@
             <ul class="list-unstyled margin-bottom-30">
                 <li><strong>Monday-Friday:</strong> 7:30am to 4pm</li>
                 <li><strong>Saturday-Sunday:</strong> Closed</li>
-            </ul>
+            </ul>            
+            
+            <!-- Google Map 
+            <div class="headline hidden-xs"><h4>Our office location</h4></div>
+            <iframe src="https://mapsengine.google.com/maps/d/embed?mid=z_yXRxSDstEA.kABQ9eKYROZY" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
+            -->
+            <!---/map-->
+            <!-- End Google Map -->
             
             <!-- Service Area -->
-            <div class="headline hidden-xs"><h4>Our Service Area</h4></div>
-            <iframe src="https://mapsengine.google.com/map/embed?mid=z_yXRxSDstEA.k4VlFAbyhrsU" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
-            
-            <!-- Facebook -->
-            <div class="headline hidden-xs"><h4>Find Us On Facebook</h4></div>
-            <div class="fb-like-box hidden-xs" style="display: block;" data-href="https://www.facebook.com/cviewwindows" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            <div class="headline hidden-xs"><h4>Our Office Location</h4></div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=zDpozwYlp13w.k1eTqhXk6EOM" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
 
         </div><!--/col-md-3-->
     </div><!--/row-->        

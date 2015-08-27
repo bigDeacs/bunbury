@@ -29,17 +29,15 @@
     </div>
 
     <div class="tag-box tag-box-v2">
-        <h2>About C-View Windows</h2>
-        <p>C-View is a family owned and operated business. We keep our eyes focused on excellence and want to give you the best possible service. 
-            Manufactured right here on Australia's Gold Coast, our windows and doors are as lovely to look at as they are to look through. 
-            You will find genuine quality in every inch of C-View products whether commercial, industrial, or domestic.</p>
+        <h2>About Bradnams Bunbury</h2>
+        <p>When you look at Bradnams Bunbury, you will see more than just windows, doors, and other products. You will see a company with years of history backed by industry experience. Bradnams Bunbury proudly serves Bunbury and surrounding regions. We are a window manufacturer with a deep commitment to helping you find the right products with the least amount of frustration. Bradnams Bunbury's windows, doors, and other products are made to measure. Although our products are made to measure, our commitment to quality cannot be measured. We take pride in creating a better view for you. At Bradnam’s Bunbury, you will see the dedication to service of a highly-skilled team of local professionals. Our range of quality products together with our professional and personal service ensures we can provide you with a wide range of architectural window and door products. Contact us today!</p>
     </div>
 
     <div class="margin-bottom-20 clearfix"></div>
 
     <div class="row">
         <!--Accordion--> 
-        <div class="col-md-7 md-margin-bottom-40">
+        <div class="col-md-12 md-margin-bottom-40">
             <div id="accordion-1" class="panel-group acc-v1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -56,11 +54,11 @@
                                     <img alt="" src="{{ asset('/img/about/quote.jpg') }}" class="img-responsive">
                                 </div>
                                 <div class="col-md-8">
-                                    C-View reps are courteous, knowledgeable and they value your time. 
+                                    Bradnams reps are courteous, knowledgeable and they value your time. 
 									Once our rep knows exactly what you need for your project, they
 									will write up a full quote then and there. 
 									<br /><br />Get the information you need to make an informed decision about windows and doors for your 
-									Gold Coast home or office. Contact us today!
+									Bunbruy home or office. Contact us today!
                                 </div>
                             </div>
                         </div>
@@ -81,7 +79,7 @@
                                 <div class="col-md-8">
                                     Don't want to wait? We don't want you to either. We want our customers to be excited about every 
 									aspect of doing business with C-View Windows. That's why we run a tight and efficient schedule. 
-									<br /><br />Gold Coast homes and businesses deserve fast and efficient service. We beat the competition and 
+									<br /><br />Bunbury homes and businesses deserve fast and efficient service. We beat the competition and 
 									provide excellent service and value quickly.
                                 </div>
                                 <div class="col-md-4">
@@ -109,7 +107,7 @@
 								<div class="col-md-8">
 									Many window and door companies operate essentially as middlemen, buying from the manufacturer, 
 									marking-up and warehousing on a shelf until bringing the window to a customer's home or office. 
-									<br /><br />At C-View, we are the manufacturer, making both home and office windows right here in our facility. 
+									<br /><br />At Bradnams, we are the manufacturer, making both home and office windows right here in our facility. 
 									This allows us complete quality control, and gives us the ability to make sure the glass delivered and 
 									installed at your home or business meets the highest standard.
 								</div>
@@ -133,7 +131,7 @@
                                     Honest, fast and accurate quotes...Dedication to the lowest lead times...Highest quality standards. 
 									Though we are always looking for ways to show more dedication to our customers, 
 									we have accomplished a trifecta of loyalty, service and standards. 
-									<br /><br />Think of us as the window and door company that wants the Gold Coast to shine through your home or office.
+									<br /><br />Think of us as the window and door company that wants Bunbury to shine through your home or office.
                                 </div>
                                 <div class="col-md-4">
                                     <img alt="" src="{{ asset('/img/about/extra.jpg') }}" class="img-responsive">
@@ -146,7 +144,7 @@
         </div>
         <!--End Accordion--> 
 
-        <!--Testimonials--> 
+        <!--Testimonials
         <div class="col-md-5 hidden-xs">
             <div class="carousel slide testimonials testimonials-v1" id="testimonials-1">
                 <div class="carousel-inner">
@@ -170,7 +168,7 @@
                     </a>
                 </div>
             </div>            
-        </div>
+        </div>--> 
         <!--End Testimonials--> 
     </div>
 
