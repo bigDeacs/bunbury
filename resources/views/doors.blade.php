@@ -24,9 +24,9 @@
 	<!--=== Content Part ===-->
 	<div class="container">   
 	    <div class="row">
-		<h3 class="col-md-12">Residential</h3>
+		<h3 class="col-md-12">Essential</h3>
 		@foreach($products as $product)
-			@if($product->category->name == 'Residential')
+			@if($product->category->name == 'Essential')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">
@@ -48,9 +48,9 @@
 		</div>
 		<hr />
 		<div class="row">
-		<h3 class="col-md-12">Prestige</h3>
+		<h3 class="col-md-12">Signature</h3>
 		@foreach($products as $product)
-			@if($product->category->name == 'Prestige')
+			@if($product->category->name == 'Signature')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">
