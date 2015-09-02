@@ -25,7 +25,7 @@
     <!--=== Content Part ===-->
 <div class="container">
     <div class="tag-box tag-box-v2">
-        This Privacy Policy governs the manner in which {!! $brand->name !!} collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="www.c-view.com.au">www.c-view.com.au</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by {!! $brand->name !!}.<br><br>
+        This Privacy Policy governs the manner in which {!! $brand->name !!} collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="{!! $brand->url !!}">{!! $brand->url !!}</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by {!! $brand->name !!}.<br><br>
 
 <b>Personal identification information</b><br><br>
 
@@ -71,8 +71,8 @@ By using this Site, you signify your acceptance of this policy. If you do not ag
 <b>Contacting us</b><br><br>
 
 If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:<br>
-<a href="http://www.c-view.com.au">{!! $brand->name !!}</a><br>
-<a href="http://www.c-view.com.au">www.c-view.com.au</a><br>
+<a href="{!! $brand->url !!}">{!! $brand->name !!}</a><br>
+<a href="{!! $brand->url !!}">{!! $brand->url !!}</a><br>
 @if($brand->address){!! $brand->address !!}<br>@endif
 @if($brand->phone){!! $brand->phone !!}<br>@endif
 @if($brand->email)<a href="mailto:{!! $brand->email !!}">{!! $brand->email !!}</a><br>@endif

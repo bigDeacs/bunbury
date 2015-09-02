@@ -1,4 +1,4 @@
-<h1>C-View Windows Contact Request</h1>
+<h1>Bradnams Bunbury Contact Request</h1>
 Name: {!! $name !!}<br />
 Email: {!! $email !!}<br />
 Phone Number: {!! $phone !!}<br />

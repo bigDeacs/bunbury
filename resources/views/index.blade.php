@@ -153,16 +153,16 @@
 
 			<!-- Our Clients -->
 			<div id="clients-flexslider" class="flexslider home clients">
-		        <div class="headline"><h2>Our Clients</h2></div>	
+		        <div class="headline"><h2>Our Partners</h2></div>	
 				<ul class="slides">
 					<li>
-		                <a href="http://www.bradnams.com.au/" target="_blank">
+		                <a href="http://www.alspec.com.au/" target="_blank">
 		                    <img src="{{ asset('/img/clients/alspec_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/alspec.png') }}" class="color-img" alt="" />
 		                </a>
 		            </li>
 		            <li>
-		                <a href="http://www.alspec.com.au/" target="_blank">
+		                <a href="http://www.bradnams.com.au/" target="_blank">
 		                    <img src="{{ asset('/img/clients/bradnams_grey.png') }}" alt="" /> 
 		                    <img src="{{ asset('/img/clients/bradnams.png') }}" class="color-img" alt="" />
 		                </a>

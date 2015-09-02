@@ -219,7 +219,7 @@ class PagesController extends Controller {
 	        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 	   	 	{
 	        	$message->from('bradnamsbunbury@bradnamsbunbury.com.au');
-	        	$message->to('brentdeacon23@gmail.com', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('C-View Windows Contact Request');
+	        	$message->to('sales@bradnamsbunbury.com.au', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('C-View Windows Contact Request');
 	    	}
 	    );
 	    return redirect('thankyou');
