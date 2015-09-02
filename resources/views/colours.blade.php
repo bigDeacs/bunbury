@@ -79,7 +79,7 @@
 			<div class="modal fade bs-pdf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-						<iframe src="/uploads/1432873772-colour.pdf" width="100%" height="700"></iframe>
+						<iframe src="/uploads/1441156341-ColourList.pdf" width="100%" height="700"></iframe>
 					</div>
 				</div>
 			</div>

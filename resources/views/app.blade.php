@@ -26,7 +26,7 @@
 			.header .dropdown-menu {
 			  border-top: solid 2px #{!! $brand['color1'] !!};
 			}
-			.footer a, .copyright a, .footer a:hover, .copyright a:hover, i, .phone, .header .navbar-default .navbar-nav > .open > a, .header .navbar-default .navbar-nav > .open > a:hover, .header .navbar-default .navbar-nav > .open > a:focus, .breadcrumb li.active, .breadcrumb li a:hover, a:focus, a:hover, a:active, a, .who li i, .who li:hover i, .who li:hover a {
+			.footer a, .copyright a, .footer a:hover, .copyright a:hover, .phone, .header .navbar-default .navbar-nav > .open > a, .header .navbar-default .navbar-nav > .open > a:hover, .header .navbar-default .navbar-nav > .open > a:focus, .breadcrumb li.active, .breadcrumb li a:hover, a:focus, a:hover, a:active, a, .who li i, .who li:hover i, .who li:hover a {
 			  color: #{!! $brand['color1'] !!};
 			}
 			.sorting-block .sorting-nav li.active {
