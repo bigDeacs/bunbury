@@ -2800,8 +2800,8 @@ ul.blog-tags a:hover {
 .header {
 	z-index:999;
 	position:relative;
-	border-bottom:solid 2px #5C6265;
-	/*background-color: #687074!important;*/
+	/*border-bottom:solid 2px #5C6265;
+	background-color: #687074!important;*/
 	background-color: #fff!important;
 }
 
