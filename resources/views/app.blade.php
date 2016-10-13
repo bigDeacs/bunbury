@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	@yield('meta')
 	@yield('head')
-	<link rel="icon" href="{{ asset('/img/favicon.ico') }}">
+	<link rel="icon" href="{{ asset('/img/favicon.ico') }}?v=2">
 	<link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('/plugins/font-awesome/css/font-awesome.min.css') }}">
 
@@ -67,9 +67,9 @@
 	<![endif]-->
 </head>
 <body>
-	<!--=== Top ===-->    
+	<!--=== Top ===-->
 	<div class="top">
-	    <div class="container">         
+	    <div class="container">
 	        <ul class="loginbar pull-right">
 	            <li>
 	                <p class="phone"><i class="icon-phone"></i> {!! $brand->phone !!}</p>
@@ -81,11 +81,11 @@
 	           		<img class="pull-left phone" style="padding-bottom: 15px;" src="{{ asset('/img/FB-114.png') }}" width="114" alt="Find us on Facebook">
 	        	</a>
 	        @endif
-	    </div>      
+	    </div>
 	</div><!--/top-->
-	<!--=== End Top ===-->    
+	<!--=== End Top ===-->
 
-	<!--=== Header ===-->    
+	<!--=== Header ===-->
 	<div class="header">
 	    <div class="navbar navbar-default" role="navigation">
 	        <div class="container">
@@ -136,14 +136,14 @@
 	                        <a href="/contact">
 	                            Contact
 	                        </a>
-	                    </li>                    
-	                </ul>                   
+	                    </li>
+	                </ul>
 	            </div><!-- /navbar-collapse -->
-	        </div>    
-	    </div>    
+	        </div>
+	    </div>
 	</div><!--/header-->
-	<!--=== End Header ===-->    
-	
+	<!--=== End Header ===-->
+
 	@yield('content')
 
 	<!--=== Footer ===-->
@@ -152,12 +152,12 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-6 md-margin-bottom-40">
 	                <!-- About -->
-			        <div class="headline"><h2>About</h2></div>	
-					<p class="margin-bottom-25 md-margin-bottom-40">@if($brand->about){!! $brand->about !!}@endif</p>	
-				</div><!--/col-md-4-->	
+			        <div class="headline"><h2>About</h2></div>
+					<p class="margin-bottom-25 md-margin-bottom-40">@if($brand->about){!! $brand->about !!}@endif</p>
+				</div><!--/col-md-4-->
 				<div class="col-md-4 hidden-sm hidden-xs md-margin-bottom-40">
 	                <!-- About -->
-			        <div class="headline"><h2>Helpful Links</h2></div>	
+			        <div class="headline"><h2>Helpful Links</h2></div>
 					<p class="margin-bottom-25 md-margin-bottom-40 row">
 						<ul class="col-sm-6">
 							<li><a href="/windows">Windows</a></li>
@@ -169,12 +169,12 @@
 							<li><a href="/colours">Colours</a></li>
 							<li><a href="/faqs/glassrules">FAQ's</a></li>
 		                    <li><a href="/about">About</a></li>
-		                    <li><a href="/contact">Contact</a></li> 
+		                    <li><a href="/contact">Contact</a></li>
 		                </ul>
-					</p>	
-				</div><!--/col-md-4-->		             
+					</p>
+				</div><!--/col-md-4-->
 				<div class="col-md-4 col-sm-6 md-margin-bottom-40">
-	                <div class="headline"><h2>Contact Us</h2></div>	
+	                <div class="headline"><h2>Contact Us</h2></div>
 	                <address class="md-margin-bottom-40">
 						@if($brand->address)<i class="icon-home"></i> {!! $brand->address !!}<br />@endif
 						@if($brand->phone)<i class="icon-phone-sign"></i> {!! $brand->phone !!}<br />@endif
@@ -182,28 +182,28 @@
 						@if($brand->email)<i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a>@endif
 	                </address>
 				</div><!--/col-md-4-->
-			</div><!--/row-->	
-		</div><!--/container-->	
-	</div><!--/footer-->	
+			</div><!--/row-->
+		</div><!--/container-->
+	</div><!--/footer-->
 	<!--=== End Footer ===-->
 	<!--=== Copyright ===-->
 	<div class="copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">						
+				<div class="col-md-8">
 		            <p class="copyright-space">
-	                    2012 - <?php echo date("Y") ?> &copy; {!! $brand->name !!}. ALL Rights Reserved. 
+	                    2012 - <?php echo date("Y") ?> &copy; {!! $brand->name !!}. ALL Rights Reserved.
 	                    <a href="/privacy">Privacy Policy</a><!-- | <a href="#">Terms of Service</a>-->
 	                </p>
 				</div>
-				<div class="col-md-4">	
+				<div class="col-md-4">
 					<a href="index.php">
 	                    <img id="logo-footer" src="/uploads/{!! $brand->logo !!}" width="200" class="pull-right" alt="Logo">
 	                </a>
 				</div>
 			</div><!--/row-->
-		</div><!--/container-->	
-	</div><!--/copyright-->	
+		</div><!--/container-->
+	</div><!--/copyright-->
 	<!--=== End Copyright ===-->
 
 	<!-- Scripts -->
@@ -212,20 +212,20 @@
 	<script src="{{ asset('/plugins/scripts.js') }}"></script>
 	<script src="{{ asset('/js/app.js') }}"></script>
 	<script src="{{ asset('/plugins/jquery-migrate-1.2.1.min.js') }}"></script>
-	<script>	
-		$(function() {		
-			$('#accordion-1').on('shown.bs.collapse', function (e) {			
-				var offset = $('.panel.panel-default > .panel-collapse.in').offset();			
-				if(offset) {				
-					$('html,body').animate({					
-						scrollTop: $('.panel-title a').offset().top -20				
-					}, 500); 			
-				}		
-			}); 	
-		});		
-		function navigateToElement(id) {		
-			$('html, body').animate({			
-				scrollTop: $("#" + id).offset().top		
+	<script>
+		$(function() {
+			$('#accordion-1').on('shown.bs.collapse', function (e) {
+				var offset = $('.panel.panel-default > .panel-collapse.in').offset();
+				if(offset) {
+					$('html,body').animate({
+						scrollTop: $('.panel-title a').offset().top -20
+					}, 500);
+				}
+			});
+		});
+		function navigateToElement(id) {
+			$('html, body').animate({
+				scrollTop: $("#" + id).offset().top
 			}, 1000);	}
 	</script>
 	@yield('scripts')
