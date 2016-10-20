@@ -23,9 +23,9 @@
 	<!--=== End Breadcrumbs ===-->
 
 	<!--=== Content Part ===-->
-<div class="container">     
+<div class="container">
     <div class="row margin-bottom-30">
-        <!--Accordion--> 
+        <!--Accordion-->
         <div class="col-md-3 md-margin-bottom-40">
 			<div class="list-group">
 			  <a href="/faqs/glassrules" class="list-group-item">Understanding Glass Rules</a>
@@ -55,9 +55,7 @@
                                 <div class="col-md-7">
                                 In today's climate where summer conditions are turning extreme, bushfires are becoming a regular occurence around Australia.<br /><br />
                                 If you are contructing a house in a bushfire-prone area, you are required by new building codes to use bushfire rated building materials for construction.<br /><br />
-                                To help you meet these requirements, Bradman's have devoloped FlameShield, a range of bushfire rated window and door products.<br /><br />
-                                Featuring fire rated seals, toughened glass and superior air infiltration, the FlameShield window and door system complies to AS3959 standards<br /><br />
-                                For more information see our <a href="" target="_blank">Flame Shield Brochure</a>
+                                Featuring fire rated seals, toughened glass and superior air infiltration, the window and door system complies to AS3959 standards<br /><br />
                                 </div>
                             </div>
                         </div>
@@ -84,11 +82,11 @@
                 </div>
             </div>
         </div>
-        <!--End Accordion--> 
+        <!--End Accordion-->
     </div>
 
     <div class="margin-bottom-50"></div>
-</div><!--/container-->		
+</div><!--/container-->
 <!--=== End Content Part ===-->
 
 @endsection
