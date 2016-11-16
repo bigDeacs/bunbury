@@ -184,13 +184,7 @@
 		                    <img src="{{ asset('/img/clients/lockwood_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/lockwood.png') }}" class="color-img" alt="" />
 		                </a>
-		            </li>
-		            <li>
-		                <a href="http://coolingbros.com.au/" target="_blank">
-		                    <img src="{{ asset('/img/clients/coolingbrothers_grey.png') }}" alt="" />
-		                    <img src="{{ asset('/img/clients/coolingbrothers.png') }}" class="color-img" alt="" />
-		                </a>
-		            </li>
+		            </li>		          
 		            <li>
 		                <a href="http://www.viridianglass.com/default.aspx" target="_blank">
 		                    <img src="{{ asset('/img/clients/viridian_grey.png') }}" alt="" />
