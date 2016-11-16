@@ -33,11 +33,6 @@
 			          <img src="{{ asset('/img/full-width/3.jpg') }}" alt="Surfer riding barrel wave">
 			        </div>
 		      	</li>
-			  	<li>
-			        <div class="slide-body" data-group="slide">
-			          <img src="{{ asset('/img/full-width/4.jpg') }}" alt="Gold Coast City, Night time">
-			        </div>
-		      	</li>
 	    	</ul>
 	  	</div>
 	  	<a class="slider-control left" href="#" data-jump="prev"><i class="icon-angle-left"></i></a>
@@ -184,7 +179,7 @@
 		                    <img src="{{ asset('/img/clients/lockwood_grey.png') }}" alt="" />
 		                    <img src="{{ asset('/img/clients/lockwood.png') }}" class="color-img" alt="" />
 		                </a>
-		            </li>		          
+		            </li>
 		            <li>
 		                <a href="http://www.viridianglass.com/default.aspx" target="_blank">
 		                    <img src="{{ asset('/img/clients/viridian_grey.png') }}" alt="" />
