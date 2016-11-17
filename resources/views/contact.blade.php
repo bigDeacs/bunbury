@@ -23,7 +23,7 @@
     </div><!--/breadcrumbs-->
     <!--=== End Breadcrumbs ===-->
     <!--=== Content Part ===-->
-    <div class="container">     
+    <div class="container">
     <div class="row margin-bottom-30">
         <div class="col-md-8 mb-margin-bottom-30">
             @if(isset($sent))
@@ -69,19 +69,26 @@
                 {!! Form::close() !!}
             @endif
             <br />
-            
+
         </div><!--/col-md-9-->
 
-        
+
         <div class="col-md-4">
             <!-- Contacts -->
-            <div class="headline"><h4>Contacts</h4></div>
+            <div class="headline"><h4>Busselton</h4></div>
             <ul class="list-unstyled who margin-bottom-30">
                 @if($brand->address)<li><i class="icon-home"></i> {!! $brand->address !!}</li>@endif
                 @if($brand->phone)<li><i class="icon-phone-sign"></i> {!! $brand->phone !!}</li>@endif
                 @if($brand->fax)<li><i class="icon-print"></i> {!! $brand->fax !!}</li>@endif
                 @if($brand->email)<li><i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a></li>@endif
+            </ul>
 
+Ph (08) 9791 9737
+
+            <div class="headline"><h4>Bunbury</h4></div>
+            <ul class="list-unstyled who margin-bottom-30">
+                <li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
+                <li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
             </ul>
 
             <!-- Business Hours -->
@@ -95,28 +102,28 @@
                     <span style="font-weight:bold;color:green;">Open Now</span>
                 @endif
             @endif
-            
+
             <ul class="list-unstyled margin-bottom-30">
                 <li><strong>Monday-Friday:</strong> 7:30am to 4pm</li>
                 <li><strong>Saturday-Sunday:</strong> Closed</li>
-            </ul>            
-            
-            <!-- Google Map 
+            </ul>
+
+            <!-- Google Map
             <div class="headline hidden-xs"><h4>Our office location</h4></div>
             <iframe src="https://mapsengine.google.com/maps/d/embed?mid=z_yXRxSDstEA.kABQ9eKYROZY" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
             -->
             <!---/map-->
             <!-- End Google Map -->
-            
+
             <!-- Service Area -->
             <div class="headline hidden-xs"><h4>Our Office Location</h4></div>
             <iframe src="https://www.google.com/maps/d/embed?mid=1bLgPwANgNG1Yg7bkD1m6UWHoJdg" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
 
         </div><!--/col-md-3-->
-    </div><!--/row-->        
+    </div><!--/row-->
 
     <!-- End Our Clients -->
-</div><!--/container-->   
+</div><!--/container-->
 <!--=== End Content Part ===-->
 
 @endsection
