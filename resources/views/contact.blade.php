@@ -83,8 +83,6 @@
                 @if($brand->email)<li><i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a></li>@endif
             </ul>
 
-Ph (08) 9791 9737
-
             <div class="headline"><h4>Bunbury</h4></div>
             <ul class="list-unstyled who margin-bottom-30">
                 <li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
