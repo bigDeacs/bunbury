@@ -28,7 +28,7 @@ class PagesController extends Controller {
 		$this->data = [
 			'brand'   => Brand::find(1)
 	    ];
-	}	
+	}
 
 	/**
 	 * Show the application welcome screen to the user.
@@ -178,6 +178,14 @@ class PagesController extends Controller {
 		}
 		$data = $this->data;
 		return view('screen', $data);
+	}
+
+	public function gallery()
+	{
+		$this->data['images'] = Image::where('status', '=', 1)->where('product', '=', 0)->get();
+		$this->data['labels'] = Label::where('status', '=', 1)->where('type', '=', 'Image')->get();
+		$data = $this->data;
+		return view('gallery', $data);
 	}
 
 	public function colours()

@@ -24,7 +24,6 @@
 	<!--=== Content Part ===-->
 	<div class="container">
 	    <div class="row">
-		<h3 class="col-md-12">Urban</h3>
 		@foreach($products as $product)
 			@if($product->category->name == 'Essential')
 		        <div class="col-md-3 col-xs-6">
@@ -48,7 +47,6 @@
 		</div>
 		<hr />
 		<div class="row">
-		<h3 class="col-md-12">Urban Plus</h3>
 		@foreach($products as $product)
 			@if($product->category->name == 'Signature')
 		        <div class="col-md-3 col-xs-6">

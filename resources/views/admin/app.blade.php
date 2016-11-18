@@ -74,10 +74,10 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Gallery <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/home/galleries') }}"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Gallery</a></li>
-								<li><a href="{{ url('/home/galleryrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Gallery Ranking</a></li>
+								<li><a href="{{ url('/home/galleries') }}"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Award Gallery</a></li>
+								<li><a href="{{ url('/home/galleryrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Award Gallery Ranking</a></li>
 								<li class="divider"></li>
-								<li><a href="{{ url('/home/imagelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Gallery Labels</a></li>
+								<li><a href="{{ url('/home/imagelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Award Gallery Labels</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -161,16 +161,16 @@
 	</script>
 	<script type="text/javascript">
 		$(function(){
-		$(".dropdown").hover(            
+		$(".dropdown").hover(
 		        function() {
 		            $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
 		            $(this).toggleClass('open');
-		            $('b', this).toggleClass("caret caret-up");                
+		            $('b', this).toggleClass("caret caret-up");
 		        },
 		        function() {
 		            $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
 		            $(this).toggleClass('open');
-		            $('b', this).toggleClass("caret caret-up");                
+		            $('b', this).toggleClass("caret caret-up");
 		        });
 		});
 	</script>
