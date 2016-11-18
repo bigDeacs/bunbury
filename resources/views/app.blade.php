@@ -100,7 +100,7 @@
 	                <a class="navbar-brand" href="/">
 	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="150" alt="Logo">
 	                </a>
-									<a class="navbar-brand" href="/">
+									<a class="navbar-brand" href="/" style="margin-left: 0;">
 	                    <img id="logo-header" src="/img/logo-2.jpg" width="150" alt="Logo">
 	                </a>
 	            </div>
@@ -124,8 +124,8 @@
 	                        <a href="/brochures">
 	                            Brochures
 	                        </a>
-	                    </li class="hidden-sm">
-						<li>
+	                    </li>
+						<li class="hidden-sm">
 							<a href="/faqs/glassrules">
 	                            FAQ's
 	                        </a>
