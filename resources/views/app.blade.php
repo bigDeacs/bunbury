@@ -98,10 +98,10 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	                <a class="navbar-brand" href="/">
-	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="200" alt="Logo">
+	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="150" alt="Logo">
 	                </a>
 									<a class="navbar-brand" href="/">
-	                    <img id="logo-header" src="/img/logo-2.jpg" width="200" alt="Logo">
+	                    <img id="logo-header" src="/img/logo-2.jpg" width="150" alt="Logo">
 	                </a>
 	            </div>
 
@@ -124,7 +124,7 @@
 	                        <a href="/brochures">
 	                            Brochures
 	                        </a>
-	                    </li>
+	                    </li class="hidden-sm">
 						<li>
 							<a href="/faqs/glassrules">
 	                            FAQ's
@@ -140,7 +140,7 @@
 	                            Contact
 	                        </a>
 	                    </li>
-											<li>
+											<li class="hidden-sm">
 	                        <a href="/showcase">
 	                            Showcase
 	                        </a>

@@ -6,6 +6,7 @@ use App\Brochure;
 use App\Label;
 use App\Offer;
 use App\Colour;
+use App\Image;
 use Mail;
 use App\Http\Requests\ContactRequest;
 
