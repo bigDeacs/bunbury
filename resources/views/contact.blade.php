@@ -87,6 +87,7 @@
             <ul class="list-unstyled who margin-bottom-30">
                 <li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
                 <li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
+                <li><i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a></li>                
             </ul>
 
             <!-- Business Hours -->

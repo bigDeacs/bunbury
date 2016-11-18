@@ -100,6 +100,9 @@
 	                <a class="navbar-brand" href="/">
 	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="200" alt="Logo">
 	                </a>
+									<a class="navbar-brand" href="/">
+	                    <img id="logo-header" src="/img/logo-2.jpg" width="200" alt="Logo">
+	                </a>
 	            </div>
 
 	            <!-- Collect the nav links, forms, and other content for toggling -->
@@ -135,6 +138,11 @@
 	                    <li>
 	                        <a href="/contact">
 	                            Contact
+	                        </a>
+	                    </li>
+											<li>
+	                        <a href="/showcase">
+	                            Showcase
 	                        </a>
 	                    </li>
 	                </ul>
