@@ -100,7 +100,7 @@
 	                <a class="navbar-brand" href="/">
 	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="150" alt="Logo">
 	                </a>
-									<a class="navbar-brand" href="/" style="margin-left: 0;">
+									<a class="navbar-brand" href="/">
 	                    <img id="logo-header" src="/img/logo-2.jpg" width="150" alt="Logo">
 	                </a>
 	            </div>
