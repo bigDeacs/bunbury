@@ -22,9 +22,9 @@
 	</div><!--/breadcrumbs-->
 	<!--=== End Breadcrumbs ===-->
 	<!--=== Content Part ===-->
-	<div class="container">   
+	<div class="container">
 	    <div class="row">
-		<h3 class="col-md-12">Essential</h3>
+		<h3 class="col-md-12">Urban</h3>
 		@foreach($products as $product)
 			@if($product->category->name == 'Essential')
 		        <div class="col-md-3 col-xs-6">
@@ -35,12 +35,12 @@
 			                        <img class="img-responsive" src="/uploads/{!! $product->images()->first()->file !!}" alt="{!! $product->name !!}" />
 			                    </a>
 			                </div>
-			                <a class="btn-more hover-effect hidden-xs" href="/window/{!! $product->url !!}">read more +</a>                   
+			                <a class="btn-more hover-effect hidden-xs" href="/window/{!! $product->url !!}">read more +</a>
 			            </div>
 			            <div class="caption">
 			                <h4><a class="hover-effect" href="/window/{!! $product->url !!}">{!! $product->name !!}</a></h4>
 			                <p></p>
-			            </div> 
+			            </div>
 			        </div>
 				</div>
 		    @endif
@@ -48,7 +48,7 @@
 		</div>
 		<hr />
 		<div class="row">
-		<h3 class="col-md-12">Signature</h3>
+		<h3 class="col-md-12">Urban Plus</h3>
 		@foreach($products as $product)
 			@if($product->category->name == 'Signature')
 		        <div class="col-md-3 col-xs-6">
@@ -59,12 +59,12 @@
 			                        <img class="img-responsive" src="/uploads/{!! $product->images()->first()->file !!}" alt="{!! $product->name !!}" />
 			                    </a>
 			                </div>
-			                <a class="btn-more hover-effect hidden-xs" href="/window/{!! $product->url !!}">read more +</a>                   
+			                <a class="btn-more hover-effect hidden-xs" href="/window/{!! $product->url !!}">read more +</a>
 			            </div>
 			            <div class="caption">
 			                <h4><a class="hover-effect" href="/window/{!! $product->url !!}">{!! $product->name !!}</a></h4>
 			                <p></p>
-			            </div> 
+			            </div>
 			        </div>
 				</div>
 		    @endif
