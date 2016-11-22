@@ -158,12 +158,12 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-6 md-margin-bottom-40">
+				<div class="col-md-3 col-sm-12 md-margin-bottom-40">
 	                <!-- About -->
 			        <div class="headline"><h2>About</h2></div>
 					<p class="margin-bottom-25 md-margin-bottom-40">@if($brand->about){!! $brand->about !!}@endif</p>
 				</div><!--/col-md-4-->
-				<div class="col-md-4 hidden-sm hidden-xs md-margin-bottom-40">
+				<div class="col-md-3 hidden-sm hidden-xs md-margin-bottom-40">
 	                <!-- About -->
 			        <div class="headline"><h2>Helpful Links</h2></div>
 					<p class="margin-bottom-25 md-margin-bottom-40 row">
@@ -181,8 +181,8 @@
 		                </ul>
 					</p>
 				</div><!--/col-md-4-->
-				<div class="col-md-4 col-sm-6 md-margin-bottom-40">
-	                <div class="headline"><h2>Contact Us</h2></div>
+				<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+	                <div class="headline"><h2>Busselton</h2></div>
 	                <address class="md-margin-bottom-40">
 						@if($brand->address)<i class="icon-home"></i> {!! $brand->address !!}<br />@endif
 						@if($brand->phone)<i class="icon-phone-sign"></i> {!! $brand->phone !!}<br />@endif
@@ -190,6 +190,14 @@
 						@if($brand->email)<i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a>@endif
 	                </address>
 				</div><!--/col-md-4-->
+				<div class="col-md-3 col-sm-6 md-margin-bottom-40">
+					<div class="headline"><h4>Bunbury</h4></div>
+					<ul class="list-unstyled who margin-bottom-30">
+							<li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
+							<li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
+							<li><i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a></li>
+					</ul>
+				</div>
 			</div><!--/row-->
 		</div><!--/container-->
 	</div><!--/footer-->
