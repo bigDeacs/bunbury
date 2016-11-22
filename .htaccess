@@ -11,4 +11,7 @@ ErrorDocument 403 /error/403.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule ^(.*)$ public/$1 [L]
+
+    RewriteCond %{HTTP_HOST} ^busseltonaluminiumwindows.com.au$
+    RewriteRule (.*) http://www.busseltonaluminiumwindows.com.au/$1 [R=301,L]
 </IfModule>
