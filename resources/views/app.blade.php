@@ -98,10 +98,10 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	                <a class="navbar-brand" href="/">
-	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="150" alt="Logo">
+	                    <img id="logo-header" src="/uploads/{!! $brand->logo !!}" width="130" alt="Logo">
 	                </a>
 									<a class="navbar-brand" href="/">
-	                    <img id="logo-header" src="/img/logo-2.jpg" width="150" alt="Logo">
+	                    <img id="logo-header" src="/img/logo-2.jpg" width="130" alt="Logo">
 	                </a>
 	            </div>
 
