@@ -192,11 +192,11 @@
 				</div><!--/col-md-4-->
 				<div class="col-md-3 col-sm-6 md-margin-bottom-40">
 					<div class="headline"><h4>Bunbury</h4></div>
-					<ul class="list-unstyled who margin-bottom-30">
-							<li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
-							<li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
-							<li><i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a></li>
-					</ul>
+					<address class="md-margin-bottom-40">
+							<i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230<br />
+							<i class="icon-phone-sign"></i> (08) 9791 9737<br />
+							<i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a>
+					</address>
 				</div>
 			</div><!--/row-->
 		</div><!--/container-->
