@@ -19,7 +19,7 @@
 	        <h1 class="pull-left">{!! $product['name'] !!}</h1>
 	        <ul class="pull-right breadcrumb hidden-xs">
 	            <li><a href="/">Home</a></li>
-	            <li><a href="/windows">{!! $product->category->name !!}</a></li>
+	            <li><a href="/windows">Windows</a></li>
 	            <li class="active">{!! $product['name'] !!}</li>
 	        </ul>
 	    </div><!--/container-->
@@ -27,9 +27,9 @@
 	<!--=== End Breadcrumbs ===-->
 	<!--=== Content Part ===-->
 
-<div class="container"> 	
+<div class="container">
 
-	<div class="row portfolio-item margin-bottom-20"> 
+	<div class="row portfolio-item margin-bottom-20">
         <!-- Carousel -->
         <div class="col-md-7 col-xs-12">
             <!-- RESPONSIVE SLIDER - START -->
@@ -120,14 +120,14 @@
                     </li>
 			</ul>
 			<!-- Buttons end here -->
-			
+
 			<!-- Comment Box -->
 			<div class="fb-comments hidden-xs" data-href="http://c-view.com.au/window/{!! $product->url !!}" data-numposts="3" data-colorscheme="light" data-width="100%"></div>
         </div>
 
         <!-- End Carousel -->
 
-       	<!-- Content Info -->        
+       	<!-- Content Info -->
         <div class="col-md-5 col-xs-12">
 			<div class="row">
 				<div class="col-md-12 col-sm-6 col-xs-12">
@@ -151,7 +151,7 @@
 					</a>
 				@endif
 				@if($product->video)
-					
+
 						<a href="#" data-toggle="modal" data-target=".bs-video-modal-lg" class="btn btn-danger btn-block" title="See Full Size Image">
 							<i class="icon-youtube-play"></i> View Video
 						</a>
@@ -160,11 +160,11 @@
 			<!--<p><a class="btn-u btn-u-large" href="#">VISIT THE PROJECT</a></p>-->
         </div>
 
-        <!-- End Content Info -->        
+        <!-- End Content Info -->
 
     </div><!--/row-->
 
-    <div class="margin-bottom-20 clearfix"></div>    
+    <div class="margin-bottom-20 clearfix"></div>
 
 	<!-- Recent Works -->
     @if(count($products) > 0)
@@ -179,7 +179,7 @@
 			                        	<img class="img-responsive" src="/uploads/{!! $other->images()->first()->file !!}" alt="{!! $other->name !!}" />
 			                        </a>
 			                    </div>
-			                    <a class="btn-more hover-effect hidden-xs" href="/window/{!! $other->url !!}">read more +</a>					
+			                    <a class="btn-more hover-effect hidden-xs" href="/window/{!! $other->url !!}">read more +</a>
 			                </div>
 			                <div class="caption">
 			                    <h3 style="min-height: 66px;"><a class="hover-effect" href="/window/{!! $other->url !!}">{!! $other->name !!}</a></h3>
@@ -188,8 +188,8 @@
 			        </div>
 			    @endforeach
 			</div><!--/row-->
-		</div><!--/container-->	 
-	@endif	
+		</div><!--/container-->
+	@endif
 
 	<!--=== End Content Part ===-->
 	@if($product->brochure)
@@ -207,7 +207,7 @@
 			<div class="modal fade bs-video-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-				        <div class="embed-container">					        	
+				        <div class="embed-container">
 				        	<iframe src='{!! $product->video !!}' width="500" height="281" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				        </div>
 					</div>
@@ -221,11 +221,11 @@
 	<script src="{{ asset('/js/jquery.event.move.js') }}"></script>
 	<script src="{{ asset('/js/rrssb.min.js') }}"></script>
 	<script src="{{ asset('/js/responsive-slider.min.js') }}"></script>
-	<script>	
-		$(document).ready(function(){	  
-			$('.responsive-slider').responsiveSlider({		
-				autoplay: true,		interval: 8000,		transitionTime: 500	  
-			});	
-		});	
+	<script>
+		$(document).ready(function(){
+			$('.responsive-slider').responsiveSlider({
+				autoplay: true,		interval: 8000,		transitionTime: 500
+			});
+		});
 	</script>
 @endsection

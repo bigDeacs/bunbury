@@ -227,8 +227,8 @@ class PagesController extends Controller {
 		Mail::send('emails.contact',
 	        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 	   	 	{
-	        	$message->from('bradnamsbunbury@bradnamsbunbury.com.au');
-	        	$message->to('sales@bradnamsbunbury.com.au', 'Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('C-View Windows Contact Request');
+	        	$message->from('busseltonwindows@busseltonwindows.com.au');
+	        	$message->to('sales@busseltonwindows.com.au', 'Busselton Sales')->cc('sales@bunburywindows.com.au', 'Bunbury Sales')->cc('brentdeacon23@gmail.com', 'Admin')->subject('Busselton/Bunbury Windows Contact Request');
 	    	}
 	    );
 	    return redirect('thankyou');
