@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'Australia/Brisbane',
+	'timezone' => 'Australia/Perth',
 
 	/*
 	|--------------------------------------------------------------------------
