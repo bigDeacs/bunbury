@@ -82,20 +82,16 @@
                 @if($brand->fax)<li><i class="icon-print"></i> {!! $brand->fax !!}</li>@endif
                 @if($brand->email)<li><i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a></li>@endif
             </ul>
-
-            <div class="headline"><h4>Bunbury</h4></div>
-            <ul class="list-unstyled who margin-bottom-30">
-                <li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
-                <li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
-                <li><i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a></li>                
-            </ul>
-
-            <!-- Business Hours -->
-            <div class="headline"><h4>Business Hours</h4></div>
             @if(date('N') == 6 || date('N') == 7)
                 <span style="font-weight:bold;color:red;">Closed Now</span>
+            @elseif(date('N') == 5)
+              @if(date('H:i') < '07:30' || date('H:i') > '14:00')
+                  <span style="font-weight:bold;color:red;">Closed Now</span>
+              @else
+                  <span style="font-weight:bold;color:green;">Open Now</span>
+              @endif
             @else
-                @if(date('H:i') < '07:30' || date('H:i') > '16:00')
+                @if(date('H:i') < '07:00' || date('H:i') > '16:30')
                     <span style="font-weight:bold;color:red;">Closed Now</span>
                 @else
                     <span style="font-weight:bold;color:green;">Open Now</span>
@@ -103,7 +99,36 @@
             @endif
 
             <ul class="list-unstyled margin-bottom-30">
-                <li><strong>Monday-Friday:</strong> 7:30am to 4pm</li>
+                <li><strong>Monday-Thursday:</strong> 7:00am to 4:30pm</li>
+                <li><strong>Friday:</strong> 7:00am to 2pm</li>
+                <li><strong>Saturday-Sunday:</strong> Closed</li>
+            </ul>
+
+            <div class="headline"><h4>Bunbury</h4></div>
+            <ul class="list-unstyled who margin-bottom-30">
+                <li><i class="icon-home"></i> 9A Stuart St, Bunbury, WA, 6230</li>
+                <li><i class="icon-phone-sign"></i> (08) 9791 9737</li>
+                <li><i class="icon-envelope-alt"></i> <a href="mailto:sales@bunburywindows.com.au" class="">sales@bunburywindows.com.au</a></li>
+            </ul>
+            @if(date('N') == 6 || date('N') == 7)
+                <span style="font-weight:bold;color:red;">Closed Now</span>
+            @elseif(date('N') == 5)
+              @if(date('H:i') < '09:00' || date('H:i') > '14:00')
+                  <span style="font-weight:bold;color:red;">Closed Now</span>
+              @else
+                  <span style="font-weight:bold;color:green;">Open Now</span>
+              @endif
+            @else
+                @if(date('H:i') < '09:00' || date('H:i') > '16:00')
+                    <span style="font-weight:bold;color:red;">Closed Now</span>
+                @else
+                    <span style="font-weight:bold;color:green;">Open Now</span>
+                @endif
+            @endif
+
+            <ul class="list-unstyled margin-bottom-30">
+                <li><strong>Monday-Thursday:</strong> 9:00am to 4pm</li>
+                <li><strong>Friday:</strong> 9:00am to 2pm</li>
                 <li><strong>Saturday-Sunday:</strong> Closed</li>
             </ul>
 
