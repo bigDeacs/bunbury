@@ -72,8 +72,16 @@
 	    <div class="container">
 	        <ul class="loginbar pull-right">
 	            <li>
-	                <p class="phone"><i class="icon-phone"></i> {!! $brand->phone !!}</p>
-	                <p class="phone_btn"><a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-warning"><i class="icon-phone"></i> Click to Call</a></p>
+	                <p class="phone">Busselton: <i class="icon-phone"></i> {!! $brand->phone !!}</p>
+	                <p class="phone">Bunbury: <i class="icon-phone"></i> (08) 9791 9737</p>
+	                <div class="phone_btn row">
+	                	<div class="col-xs-6">
+		                	<a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-warning"><i class="icon-phone"></i> Call Busselton</a>
+		                </div>
+		                <div class="col-xs-6">
+		                	<a href="tel:0897919737" class="btn btn-block btn-lg btn-warning"><i class="icon-phone"></i> Call Bunbury</a>
+		                </div>
+	                </p>
 	            </li>
 	        </ul>
 	        @if($brand->facebook)
