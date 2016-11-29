@@ -3012,7 +3012,7 @@ ul.blog-tags a:hover {
 	}
 	.phone_btn {
 		display: block;
-		max-width: 200px;
+		/*max-width: 200px;*/
 		margin: 10px auto;
 	}
 	.thumbnail-text {

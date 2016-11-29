@@ -70,10 +70,10 @@
 	<!--=== Top ===-->
 	<div class="top">
 	    <div class="container">
-	        <ul class="loginbar pull-right">
-	            <li>
-	                <p class="phone">Busselton: <i class="icon-phone"></i> {!! $brand->phone !!}</p>
-	                <p class="phone">Bunbury: <i class="icon-phone"></i> (08) 9791 9737</p>
+	        <ul class="loginbar pull-right" style="width:100%;">
+	            <li>	                
+	                <p class="phone" style="float: right;"><i class="icon-phone"></i> Bunbury: (08) 9791 9737</p>
+	                <p class="phone" style="float: right;"><i class="icon-phone"></i> Busselton: {!! $brand->phone !!} | </p>
 	                <div class="phone_btn row">
 	                	<div class="col-xs-6">
 		                	<a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-warning"><i class="icon-phone"></i> Call Busselton</a>
