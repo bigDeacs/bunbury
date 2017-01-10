@@ -25,7 +25,7 @@
 	<div class="container">
 	    <div class="row">
 		@foreach($products as $product)
-			@if($product->category->name == 'Essential')
+			@if($product->category->name == 'Urban')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">
@@ -48,7 +48,7 @@
 		<hr />
 		<div class="row">
 		@foreach($products as $product)
-			@if($product->category->name == 'Signature')
+			@if($product->category->name == 'Urban Plus')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">
