@@ -9,6 +9,11 @@
 @section('head')
     <link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <style>
+        #recaptcha_table input[type="text"], #recaptcha_table select{
+            display: inline !important;;  
+        }  
+    </style>
 @endsection
 
 @section('content')
@@ -59,7 +64,7 @@
                                 {!! errors_for('info', $errors) !!}
                             </div>
                             <div class="form-group">
-                                <button class="g-recaptcha" data-sitekey="6LcB7REUAAAAAGDOwd5k3sXEb-imlfIUjFmP3859">Submit</button>
+                                <button class="g-recaptcha" data-sitekey="6LcB7REUAAAAAGDOwd5k3sXEb-imlfIUjFmP3859" data-callback="YourOnSubmitFn">Submit</button>
                             </div>
                         </div>
                     </div>
