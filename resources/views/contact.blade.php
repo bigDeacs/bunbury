@@ -33,6 +33,9 @@
                   </span>
                 </div>
             @else
+                @if(session()->has('data'))
+                    {!! session('data') !!}
+                @endif
                 <div class="headline"><h3>Enter your details and we will get back to you</h3></div>
                 {!! Form::open(['route' => 'contactRequest']) !!}
                     <div class="row">

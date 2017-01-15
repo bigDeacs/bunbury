@@ -235,7 +235,7 @@ class PagesController extends Controller {
 		    );
 	    	return redirect('thankyou');
 		}
-		return redirect()->back()->withInput();
+		return redirect()->back()->withInput()->with('data', ['Captcha not complete']);
 	}
 
 	public function thankyou()
