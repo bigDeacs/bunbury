@@ -7,13 +7,7 @@
 @endsection
 
 @section('head')
-    <link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <style>
-        #recaptcha_table input[type="text"], #recaptcha_table select{
-            display: inline !important;;  
-        }  
-    </style>
+    <link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">    
 @endsection
 
 @section('content')
