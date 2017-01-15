@@ -224,6 +224,7 @@ class PagesController extends Controller {
 
 	public function contactRequest(ContactRequest $request)
 	{
+		dd($request);
 		Mail::send('emails.contact',
 	        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 	   	 	{

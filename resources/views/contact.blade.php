@@ -8,6 +8,7 @@
 
 @section('head')
     <link href="{{ asset('/css/pages/portfolio-v2.css') }}" rel="stylesheet" media="screen">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 @endsection
 
 @section('content')
@@ -56,6 +57,9 @@
                                 <label class="control-label" for="info">Message:</label>
                                 {!! Form::textarea('info', null, ['class' => 'form-control', 'required' => 'required']) !!}
                                 {!! errors_for('info', $errors) !!}
+                            </div>
+                            <div class="form-group">
+                                <button class="g-recaptcha" data-sitekey="6LcB7REUAAAAAGDOwd5k3sXEb-imlfIUjFmP3859" data-callback="YourOnSubmitFn">Submit</button>
                             </div>
                         </div>
                     </div>
