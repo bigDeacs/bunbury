@@ -225,7 +225,7 @@ class PagesController extends Controller {
 	public function contactRequest(ContactRequest $request)
 	{
 		$token = $request->get('g-recaptcha-response');
-		if(strlen($token)) > 0 {
+		if($token) {
 			Mail::send('emails.contact',
 		        ['name' => $request->get('name'), 'email' => $request->get('email'), 'phone' => $request->get('phone'), 'info' => $request->get('info')], function($message)
 		   	 	{
