@@ -34,7 +34,11 @@
                 </div>
             @else
                 @if(session()->has('data'))
-                    {!! session('data') !!}
+                    <div class="alert alert-danger" role="alert">
+                      <span>
+                        <p>{!! session('data') !!}</p>
+                      </span>
+                    </div>
                 @endif
                 <div class="headline"><h3>Enter your details and we will get back to you</h3></div>
                 {!! Form::open(['route' => 'contactRequest']) !!}
